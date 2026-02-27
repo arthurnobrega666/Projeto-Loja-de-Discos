@@ -1,0 +1,167 @@
+body {
+  margin: 0;
+  background-color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+}
+
+.logo {
+  color: white;
+  font-size: 40px;
+  margin: 20px 0;
+  letter-spacing: 3px;
+}
+
+.navbar {
+  width: 100%;
+  background-color: #111;
+  padding: 15px 0;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center; 
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+
+.produtos {
+    padding: 60px 10%;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.product-card {
+  background-color: #111;
+  padding: 20px;
+  border: 1px solid #222;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.image-container {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.product-card {
+  background-color: #111;
+  padding: 20px;
+  border: 1px solid red;
+}
+
+.header-side {
+  flex: 1; 
+}
+.logo {
+  white-space: nowrap; 
+  text-align: center;
+}
+
+.navbar ul li a {
+  position: relative;
+  transition: 0.5 ease;
+}
+
+.navbar ul li a:hover{
+  color: #dc3545;
+}
+
+.navbar ul li a::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 2px;
+  background-color: #dc3545; 
+  transition: width 0.3s ease;
+}
+
+.navbar ul li a:hover::after {
+  width: 100%;
+}
+
+.btn {
+  transition: all 0.3s ease;
+}
+
+.btn-danger:hover{
+  background-color: #a71d2a;
+  transform: translateY(-2px);
+}
+
+.btn-outline-light:hover{
+  background-color: white;
+  color: black;
+  transform:translateY(-2px) ;
+}
+
+.product-card{
+  transition: transform 0.3 ease, box-shadow 0.3s ease;
+}
+.product-card:hover{
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(220,53,69, 0.3s);
+}
+
+.footer{
+  background-color: #0d0d0d;
+  color: #ccc;
+}
+
+.footer a{
+  color: #ccc;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.footer a:hover{
+  color: #dc3545;
+}
+
+.footer h5,
+.footer h6{
+  letter-spacing: 1px;
+}
+
+.footer{
+  background-color: #111;
+  color: #ccc;
+  padding: 40px 0;
+}
+
+.footer-content {
+  text-align: center;
+}
